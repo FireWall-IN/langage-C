@@ -1,17 +1,16 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main (int ac, char **av)
+int main(int ac, char **av)
 {
-    int a = 0,b = 0,c;
+    float res;
+    int a, b, c;
 
-    printf("Entrer les 2 nombres : ");
-    scanf("%d%d",&a,&b);
+    printf("Entrer les 3 nombres : ");
+    scanf("%d%d%d", &a, &b, &c);
 
-    c = a;
-    a = b;
-    b = c;
+    res = (float)(a+b+c)/3;
 
-    printf("le premier nombre est %d le deuxieme nombre est %d", a,b);    
+    printf("la moyenne est %.2f", res);
     return 0;
 }
