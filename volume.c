@@ -4,13 +4,14 @@
 
 int main()
 {
-    float v,canette;
-    printf("entrer votre volume : ");
-    scanf("%f",&v);
-    v = (v / 0.33);
+    float nbr;
 
-    printf("le volume est : %.4f", v); 
+    printf("entrer un nombre reel : ");
+    scanf("%f",&nbr);
 
+    nbr = nbr - (int)nbr;
+
+    printf("la partie fractionnaire est : %f", nbr);
 
     return 0;
 }
