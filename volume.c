@@ -4,14 +4,13 @@
 
 int main()
 {
-    float nbr;
-
+    int a,b,c,nbr;
     printf("entrer un nombre reel : ");
-    scanf("%f",&nbr);
+    scanf("%d %d %d",&a, &b, &c);
 
-    nbr = nbr - (int)nbr;
-
-    printf("la partie fractionnaire est : %f", nbr);
+    nbr = 2 * (a*b+a*c+b*c);
+    
+    printf("la suface du parrallepipede est  : %d", nbr);
 
     return 0;
 }
